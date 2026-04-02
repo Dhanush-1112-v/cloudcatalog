@@ -19,7 +19,7 @@ export default function Login() {
   const handleLogin = async () => {
     setError(""); setLoading(true);
     try {
-      const res  = await fetch("http://localhost:5000/login", {
+      const res = await fetch("https://cloudcatalog.onrender.com/login", {
         method:"POST", headers:{"Content-Type":"application/json"},
         body: JSON.stringify(form),
       });

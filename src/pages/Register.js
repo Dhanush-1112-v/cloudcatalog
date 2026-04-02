@@ -34,7 +34,7 @@ export default function Register() {
     if (!form.name||!form.email||!form.password) { setError("All fields are required"); setLoading(false); return; }
     if (form.password.length<6)                  { setError("Password must be at least 6 characters"); setLoading(false); return; }
     try {
-      const res  = await fetch("http://localhost:5000/register", {
+      const res = await fetch("https://cloudcatalog.onrender.com/register", {
         method:"POST", headers:{"Content-Type":"application/json"},
         body:JSON.stringify(form),
       });
