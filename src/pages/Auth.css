@@ -1,0 +1,32 @@
+.auth-container {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.auth-container input,
+.auth-container select {
+  margin: 10px;
+  padding: 12px;
+  width: 250px;
+  border-radius: 10px;
+  border: none;
+}
+
+.auth-container button {
+  padding: 10px 20px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.auth-container p {
+  margin-top: 10px;
+  cursor: pointer;
+  color: #38bdf8;
+}
