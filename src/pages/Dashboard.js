@@ -21,7 +21,7 @@ const AI_CHIPS = [
 // ─── API HELPER ───────────────────────────────────────────────────────────────
 function api(path, opts={}) {
   const token = localStorage.getItem("token");
-  return fetch(`http://localhost:5000${path}`, {
+  return fetch(`https://cloudcatalog.onrender.com${path}`, {
     ...opts,
     headers: {
       "Content-Type":"application/json",
